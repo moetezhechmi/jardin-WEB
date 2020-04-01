@@ -1,0 +1,48 @@
+{% extends'base.html.twig' %}
+{%block content%}
+    <div class="sb2-2">
+        <!--== breadcrumbs ==-->
+        <div class="tz-2 tz-2-admin">
+            <div class="tz-2-com tz-2-main">
+                <h4>Modifier un club</h4> <a class="dropdown-button drop-down-meta drop-down-meta-inn" href="#" data-activates="dr-list"><i class="material-icons">more_vert</i></a>
+                <ul id="dr-list" class="dropdown-content">
+                    <li><a href="{{ path('list') }}">Consulter la liste</a> </li>
+
+                </ul>
+                <!-- Dropdown Structure -->
+                <div class="split-row">
+                    <div class="col-md-12">
+                        <div class="box-inn-sp ad-inn-page">
+                            <div class="tab-inn ad-tab-inn">
+                                <div class="hom-cre-acc-left hom-cre-acc-right">
+                                    <div class="">
+                                        <form class="">
+                                            <div class="row">
+                                                <div class="input-field col s12">
+                                                    {{ form_start(form) }}
+                                                </div>
+                                            </div>
+
+
+
+
+                                            <div class="">
+                                                {{ form_widget(form) }}
+                                                <div class="input-field col s12">
+                                                    <input   class="btn btn-primary" type="submit" value="Ajouter"  style="background-color: #0d70b5"/>
+                                                </div>
+                                            </div>
+                                            {{ form_end(form) }}
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{%endblock%}

@@ -1,0 +1,12 @@
+tableclub_index:
+    path:     /
+    defaults: { _controller: "EspritBundle:tableclub:index" }
+    methods:  GET
+
+tableclub_show:
+    path:     /{id}/show
+    defaults: { _controller: "EspritBundle:tableclub:show" }
+    methods:  GET
+
+
+

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from rn53themes.net/themes/demo/directory/admin.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 15 Jan 2018 00:48:17 GMT --><head>
+    <title>Weldi</title>
+    <!-- META TAGS -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- FAV ICON(BROWSER TAB ICON) -->
+    <link rel="shortcut icon" href="{{ asset('images/log9.png') }}" >
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins%7CQuicksand:500,700" rel="stylesheet">
+    <!-- FONTAWESOME ICONS -->
+    <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+    <!-- ALL CSS FILES -->
+    <link href="{{ asset('css/materialize.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" type="text/css" />
+    <!-- RESPONSIVE.CSS ONLY FOR MOBILE AND TABLET VIEWS -->
+    <link href="{{ asset('css/responsive.css') }}" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="{{ asset('js/html5shiv.js') }}"></script>
+    <script src="{{ asset('js/respond.min.js') }}"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>
+<!--== MAIN CONTRAINER ==-->
+{% block nav %}
+    <section class="bottomMenu dir-il-top-fix">
+    <style>
+        #pos{
+            position: relative;
+
+            left: 1100px;
+        }
+    </style>
+    <div class="col-md-2 col-sm-3 col-xs-6" id ="pos">
+        <!-- Dropdown Trigger -->
+        <a class='waves-effect dropdown-button top-user-pro' href='#' data-activates='top-menu'><img src="{{ asset('images/users/6.png')}}" alt="" />My Account <i class="fa fa-angle-down" aria-hidden="true"></i> </a>
+        <!-- Dropdown Structure -->
+        <ul id='top-menu' class='dropdown-content top-menu-sty'>
+            <li><a href="admin-setting.html" class="waves-effect"><i class="fa fa-cogs"></i>Admin Setting</a> </li>
+
+            <li><a href="#" class="ho-dr-con-last waves-effect"><i class="fa fa-sign-in" aria-hidden="true"></i> Logout</a> </li>
+        </ul>
+    </div>
+
+    <div class="container top-search-main">
+        <div class="row">
+            <div class="ts-menu">
+                <!--SECTION: LOGO-->
+
+            </div>
+        </div>
+    </div>
+    </section>{% endblock %}
+
+
+<!--== BODY CONTNAINER ==-->
+<section>
+    {% block side %}
+
+    <div class="tz">
+        <!--LEFT SECTION-->
+        <div class="tz-l">
+            <div class="tz-l-1" style="background-color: #e5e9ec">
+                <ul>
+                    <li><img src="{{ asset ('images/log.png')}}" alt="" /> </li>
+
+                </ul>
+            </div>
+            <div class="tz-l-2">
+                <ul>
+                    <li>
+                        <a href="{{path('home')}}"><img src="{{ asset('images/icon/dbl1.png') }}" alt="" /> My Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="{{path('list')}}"><img src="{{ asset('images/icon/dbl2.png') }}" alt="" /> All Listing</a>
+                    </li>
+                    <li>
+                        <a href="{{path('add')}}"><img src="{{ asset('images/icon/dbl3.png') }}" alt="" /> Add New Listing</a>
+                    </li>
+
+                    <li>
+                        <a href="db-my-profile.html"><img src="{{ asset('images/icon/dbl6.png') }}" alt="" /> My Profile</a>
+                    </li>
+
+
+
+
+                </ul>
+            </div>
+        </div>
+        {% endblock %}
+        <!--CENTER SECTION-->
+        {% block content %}
+            <div class="tz-2" >
+                <div class="pglist-p-com-ti"  style="background-color: #e5e9ec">
+                </div>
+                <div class="list-pg-inn-sp" style="background-color: #e5e9ec">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active"> <img src="{{ asset('images/img2.jpg') }}" alt=""> </div>
+
+                            <div class="item active"> <img src="{{ asset('images/img1.jpg') }}" alt=""> </div>
+
+                            <div class="item"> <img src="images/slider/a2.jpg" alt=""> </div>
+                            <div class="item"> <img src="images/slider/a3.jpg" alt=""> </div>
+                            <div class="item"> <img src="images/slider/a4.jpg" alt=""> </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev"> <i class="fa fa-angle-left list-slider-nav" aria-hidden="true"></i> </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next"> <i class="fa fa-angle-right list-slider-nav list-slider-nav-rp" aria-hidden="true"></i> </a>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 col-sm-3" style="background-color: #e5e9ec">
+                    <div class="hom-pro" > <img src="{{ asset('images/icon/1.png') }}" alt="" />
+                        <a href="{{ path('add') }}" >Ajouter Club</a> </div>
+
+                </div>
+                <div class="col-md-3 col-sm-3" style="background-color: #e5e9ec" id="aa"  >
+                    <div class="hom-pro"> <img src="{{ asset('images/icon/1.png') }}" alt="" />
+                        <a href="{{ path('add') }}" >Ajouter Jardin</a> </div>
+                </div>
+                <div class="col-md-3 col-sm-3" style="background-color: #e5e9ec">
+                    <div class="hom-pro"> <img src="{{ asset('images/icon/1.png') }}" alt="" />
+                        <a href="{{ path('add') }}" >Ajouter Event</a> </div>
+                </div>
+                <div class="col-md-3 col-sm-3" style="background-color: #e5e9ec">
+                    <div class="hom-pro"> <img src="{{ asset('images/icon/1.png') }}" alt="" />
+                        <a href="{{ path('add') }}" >Ajouter inc</a> </div>
+                </div>
+
+
+
+
+            </div>
+        {% endblock %}
+
+        <!--RIGHT SECTION-->
+        <div class="tz-3">
+            <h4>Notifications(1)</h4>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!--SCRIPT FILES-->
+<script src="{{ asset('js/jquery.min.js') }}"></script>
+<script src="{{ asset('js/bootstrap.js') }}" type="text/javascript"></script>
+<script src="{{ asset('js/materialize.min.js') }}" type="text/javascript"></script>
+<script src="{{ asset('js/custom.js') }}"></script>
+</body>
+
+
+<!-- Mirrored from rn53themes.net/themes/demo/directory/admin.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 15 Jan 2018 00:48:20 GMT -->
+</html>

@@ -1,0 +1,24 @@
+esprit_tableclub:
+    resource: "@EspritBundle/Resources/config/routing/tableclub.yml"
+    prefix:   /tableclub
+
+home:
+    path:     /home
+    defaults: { _controller: EspritBundle:Default:index }
+list:
+    path:     /list
+    defaults: { _controller: EspritBundle:Default:list }
+ajout:
+    path:     /list
+    defaults: { _controller: EspritBundle:Default:ajout }
+delete:
+    path:     /delete/{id}
+    defaults: { _controller: EspritBundle:Default:delete }
+add:
+    path:     /add
+    defaults: { _controller: EspritBundle:Default:add }
+update:
+    path:     /update/{id}
+    defaults: { _controller: EspritBundle:Default:update }
+
+
